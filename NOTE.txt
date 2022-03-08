@@ -1,0 +1,5 @@
+1. Trong string, phép + vào bị lâu hơn so với những phép khác
+-> dễ TLE -> nghĩ cách chỉnh st[i] thay vì tạo xâu mới
+2.
+- Chuyển số nhanh: st[i]-'0'
+- Chuyển xâu nhanh: '0'+ x (với x là số có 1 chữ số)
