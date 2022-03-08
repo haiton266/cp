@@ -1,0 +1,26 @@
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+ll a[200005];
+int main(){
+	int n; cin >> n;
+	priority_queue<pair<ll,ll>> x; // pair giống struct nhưng dùng luôn đỡ khai báo
+		// Hang doi uu tien la hang doi duoc sap xep giam dan, khi top thi lay duoc thang lon nhat truoc
+	for (int i=1;i<=n;i++) {
+		cin >> a[i];
+		x.push(make_pair(a[i],i));	
+	}
+	// De truy xuat
+	cout << x.top().first << " " << x.top().second;
+	x.pop();
+	return 0;
+}
+-----
+Tăng dần:
+priority_queue <int,vector<int>,greater<int>> q;
+---
+Nếu muốn theo ý mình thì tự viết hàm cmp
+struct cmp{
+	bool ss() (int a,int b) {return a<b};
+};
+priority_queue <int,vector<int>,cmp> q;

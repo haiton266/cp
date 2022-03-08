@@ -1,0 +1,4 @@
+-> sort();
+lower_bound(a+1,a+n+1,x) - a;  -> pos >=x
+upper_bound(a+1,a+n+1,x) - a;  -> pos >x
+binary_search(a+1,a+n+1,x) - a;-> true nếu có; else false

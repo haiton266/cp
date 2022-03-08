@@ -1,0 +1,5 @@
+Phép XOR: 
+- 1 nếu khác nhau
+- 0 nếu giống nhau
+VD: 2 ^ 3 ( ^: XOR) = 10 xor 11 = 01 (=1)
+=> Nhận thấy làm chiều nào cũng thế : a xor b = c thì a xor c = b, b xor c = a

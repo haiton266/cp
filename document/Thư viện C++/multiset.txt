@@ -1,0 +1,7 @@
+Giống set nhưng nó lưu cả những key giống nhau
+multiset<int> s;
+Các phương thức giống set
+Muốn xóa hết phần tử key
+s.erase(key);
+Chỉ muốn xóa 1 phần tử key
+s.erase(s.find(key));

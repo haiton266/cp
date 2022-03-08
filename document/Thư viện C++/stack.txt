@@ -1,0 +1,8 @@
+size : trả về kích thước hiện tại của stack. ĐPT O(1).
+empty : true stack nếu rỗng, và ngược lại. ĐPT O(1).
+push : đẩy phần tử vào stack. ĐPT O(1).
+pop : loại bỏ phẩn tử ở đỉnh của stack. ĐPT O(1).
+top : truy cập tới phần tử ở đỉnh stack. ĐPT O(1).
+
+#include<stack>
+stack<kdl> a;

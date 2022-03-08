@@ -1,0 +1,7 @@
+round: làm tròn số nguyên gần nhất
+
+
+
+
+ceil:  làm tròn lên số nguyên gần nhất
+floor: làm tròn xuống số nguyên gần nhất

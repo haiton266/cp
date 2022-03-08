@@ -1,0 +1,18 @@
+vector<int> a(gioi han co hoac khong);
+a.push_back(gia tri) 
+pop_back() : xoa phan tu cuoi cung
+a.size()
+v.resize(n)
+sort(v.begin(), v.end());
+v.erase(v.begin() + l, v.begin() + r + 1);
+
+DUYET
+    vector<int>::iterator it;
+
+for (it = v.begin(); it != v.end(); it++) {
+        cout << *it << " ";
+for (auto x : v) {
+        cout << x << " ";
+    }
+for (int i = 0; i < authors.size() - 1; i++)
+--------------------------------------------

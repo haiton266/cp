@@ -1,0 +1,9 @@
+bool cmp1(const int &x, const int &y) { 
+	return f[x] < f[y]; 
+}
+bool cmp2(const int &x, const int &y) { 
+	return f[x] != f[y] ? f[x] < f[y] : x < y; 
+}
+for (int i=1;i<=n;i++) vt[i] = i;
+sort(vt + 1, vt + n + 1 ,cmp1); // cmp1 là lưu vị trí bth, cmp2 là lưu vị trí theo kiểu nếu cùng giá trị a thì vt nào bé hơn thì xếp trước
+sort(a+1,a+n+1);

@@ -1,0 +1,9 @@
+map<char,int> t;
+t[h]++;
+for (auto x:t) // Mọi cái thư viện C++ đều duyệt như thế này được
+	cout << x.first << " " << x.second; 
+(x kiểu pair)
+-----
+Trong C++17 : gọn là 
+for (auto [x,y]:t)
+	cout << x << " " << y << endl;

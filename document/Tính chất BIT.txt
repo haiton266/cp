@@ -1,0 +1,4 @@
+- Phép dịch trái thu được số gấp đôi số cũ 
+- Phép NOT: phép đảo bit 1 <-> 0
+- Phép A AND B thu được số <= số bé hơn vì lấy từng bit nhân với nhau
+- Phép XOR: 2 bit khác nhau thì ra 1, giống nhau ra 0 -> X ^ X = 0

@@ -1,0 +1,10 @@
+* bitset là ctdl dùng để lưu trữ bit
+-> Lưu trữ nhanh hơn mảng và vector, vì dùng nén
+	+	Truy cập như mảng, đánh số từ phải sang trái từ 0 tới size-1
+	+	Trả về size: bit.size();
+	+	Trả về bit=1: bit.count();
+Khai báo:	bitset<giới hạn bit> bit;
+		bitset<giới hạn bit> bit(20); -> Chuyển 20 vô bitset 
+		bitset<giới hạn bit> bit = 20;
+		bitset<giới hạn bit> bit(string("101)); -> chuyển 101 vô bitset
+		

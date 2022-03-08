@@ -1,0 +1,12 @@
+Set cũng như kiểu vector và nó lưu các khóa key, nhưng thua map vì nó k lưu số lần lặp
+-----
+set<int> s; // Mặc định so sánh less ( sắp xếp bé hơn )
+set<int,greater<int>> s;
+set<int,cmp> s;
+
+s.insert(5);
+s.erase(key) hoặc s.erase(s.begin()+vị trí); // Truyền vào địa chỉ
+s.find(key);
+s.clear(); xóa tất cả
+Cũng có các hàm như lower_bound ... nhưng muốn theo ý mình
+thì cứ chuyển về mảng rồi thao tác

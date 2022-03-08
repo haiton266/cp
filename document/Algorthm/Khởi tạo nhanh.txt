@@ -1,0 +1,8 @@
+* 1 chiều:
+	vector<int> f(n,0);
+	int f[302];
+	memset(f,0,sizeof(f));
+* 2 chiều: 
+	vector<vector<int>> f(n,vector<int>(m,0));
+	int f[302][302];
+	memset(f,0,sizeof(f));
