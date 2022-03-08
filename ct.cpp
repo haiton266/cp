@@ -1,33 +1,26 @@
 #include <bits/stdc++.h>
 using namespace std;
-class Solution
+#define pb push_back
+#define mp make_pair
+typedef long long ll;
+typedef long double ld;
+const ll NMAX = 2e5 + 1;
+const ll mod = 1e9 + 7;
+ll a[NMAX];
+void solve()
 {
-public:
-	string longestCommonPrefix(vector<string> &st)
-	{
-		int nn = 500, vt = 0;
-		for (int i = 0; i < st.size(); i++)
-			if (nn > st[i].length())
-				nn = st[i].length(), vt = i;
-		swap(st[vt], st[0]);
-		string res = "";
-		// cout << st.size() << endl;
-		for (int i = 0; i < nn; i++)
-		{
-			for (int j = 1; j < st.size(); j++)
-			{
-				// cout << j << " ";
-				if (st[j][i] != st[0][i])
-					return res;
-			}
-			res = res + st[0][i];
-		}
-		return res;
-	}
-};
+	cout << "GOOD LUCK!";
+}
 int main()
 {
-	Solution a;
-	vector<string> ab{"flower", "flow", "flight"};
-	cout << a.longestCommonPrefix(ab);
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+	freopen("input.inp", "r", stdin);
+	freopen("output.out", "w", stdout);
+	ll t;
+	cin >> t;
+	while (t--)
+		solve();
+	return 0;
 }
