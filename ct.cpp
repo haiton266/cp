@@ -1,52 +1,82 @@
 #include <bits/stdc++.h>
+
 using namespace std;
-#define pb push_back
-#define mp make_pair
-typedef long long ll;
-typedef long double ld;
-const ll NMAX = 2e5 + 1;
-const ll mod = 1e9 + 7;
-ll a[NMAX];
-string solution(string st)
+
+struct NV
 {
-	string res = "";
-	stack<char> stack;
-	for (int i = 0; i < st.length(); i++)
-		if (st[i] != ')')
-			stack.push(st[i]);
-		else
-		{
-			string temp = "";
-			while (stack.top() != '(')
-			{
-				temp = temp + stack.top();
-				stack.pop();
-			}
-			stack.pop();
-			for (int k = 0; k < temp.length(); k++)
-				stack.push(temp[k]);
-		}
-	while (!stack.empty())
+	string ten; // tên
+	int tuoi;	// tuôi
+	string cv;	// chuc vu
+	double hsl; // he so luong -> Có thể lẻ nên phải là double ( double > float )
+	double luong;
+	void nhap(NV &a);		// ham nhap
+	void In(NV &a);			// ham in
+	void tinh_luong(NV &a); // ham tinh luong
+};
+double tinh_luong(NV &a)
+{
+	int lcb = 1499000;
+	double luong = 0;
+	if (a.cv[0] == 'g')
 	{
-		res = stack.top() + res;
-		stack.pop();
+		luong = lcb * a.hsl + lcb * 0.5;
 	}
-	return res;
+	if (a.cv[0] == 't')
+	{
+		luong = lcb * a.hsl + lcb * 0.3;
+	}
+	if (a.cv[0] == 'n')
+	{
+		luong = lcb * a.hsl + lcb * 0.2;
+	}
+	return luong;
 }
-void solve()
+void nhap(NV &a)
 {
-	cout << solution("foo(bar(baz))blim");
+	cout << "\nNhap ho va ten: ";
+	fflush(stdin); // Xóa bộ nhớ đệm
+	getline(cin, a.ten);
+	cout << "Nhap tuoi: ";
+	cin >> a.tuoi;
+	cout << "Nhap vi tri lam viec: ";
+	cin.ignore();
+	getline(cin, a.cv);
+	cout << " Nhap he so luong: ";
+	cin >> a.hsl;
 }
+void In(NV &a)
+{
+	cout << " \n Ho va ten la: " << a.ten;
+	cout << " \n Tuoi la: " << a.tuoi;
+	cout << "\n Vi tri lam viec la: " << a.cv;
+	cout << "\n He so luong la: " << a.hsl;
+	a.luong = tinh_luong(a);
+	cout << "\n Luong la: " << fixed << setprecision(0) << a.luong;
+}
+
 int main()
 {
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
-	// freopen("input.inp", "r", stdin);
-	// freopen("output.out", "w", stdout);
-	// ll t;
-	// cin >> t;
-	// while (t--)
-	solve();
+	NV nv[50];
+	int n; // n la so nhan vien
+	cout << " So luong nhan vien la: ";
+	cin >> n;
+	for (int i = 0; i < n; i++)
+	{
+		cout << "Nhap nhan vien thu: " << i + 1;
+		nhap(nv[i]);
+	}
+	double res = 0;
+	int vt = 0;
+	for (int i = 0; i < n; i++)
+	{
+		double temp = tinh_luong(nv[i]); // temp: biến tạm thời
+		if (temp > res)
+		{
+			vt = i;
+			res = temp;
+		}
+	}
+	cout << "Nhan vien co luong cao nhat la: ";
+	In(nv[vt]);
 	return 0;
 }

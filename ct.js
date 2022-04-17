@@ -1,21 +1,17 @@
-var hs = {
-    name: 'Hai',
-    age: 19,
-    getName: function() {
-        return this.name;
-    }
-}
-console.log(hs.getName())
+var listStudentBlock = document.querySelector('#list-students');
 
-// Tạo constructor cho object
-function User(firstName, lastName, avatar) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.avatar = avatar;
+var studentApi = 'http://localhost:3000/student';
+
+function start() {
+    getStudent();
 }
 
-// var author = new User('Sưn', 'Nguyen', 'New');
-// console.log(author);
+start();
 
-// author.rank = 5;
-// console.log(author.firstName);
+function getStudent(callback) {
+    fetch(studentApi)
+        .then(function(response) {
+            return response.json();
+        })
+        .then(callback);
+}
