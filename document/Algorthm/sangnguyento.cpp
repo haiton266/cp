@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
-const ll num = 100001;
-bool kt[num];
+bool kt[1e7 + 1];
 vector<ll> b;
 void snt(int n)
 {

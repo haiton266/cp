@@ -1,23 +1,14 @@
 {
-    "student": [{
-            "id": 1,
-            "code": 101,
-            "name": "Ton That Hai"
-        },
-        {
-            "id": 2,
-            "code": 102,
-            "name": "Bao Tran"
-        },
-        {
-            "name": "Phuong",
-            "code": "105\n",
-            "id": 6
-        },
-        {
-            "name": "Phuong",
-            "code": "105",
-            "id": 7
-        }
-    ]
+  "student": [
+    {
+      "name": "Phuong",
+      "code": "123213",
+      "id": 3
+    },
+    {
+      "name": "ok",
+      "code": "123",
+      "id": 4
+    }
+  ]
 }

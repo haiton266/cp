@@ -29,6 +29,10 @@
   ],
   "files.associations": {
     "iostream": "cpp",
-    "iomanip": "cpp"
+    "iomanip": "cpp",
+    "ostream": "cpp",
+    "map": "cpp",
+    "algorithm": "cpp",
+    "random": "c"
   }
 }
