@@ -1,2 +1,2 @@
 
-		res += 1;
+	freopen("output.out", "w", stdout);
