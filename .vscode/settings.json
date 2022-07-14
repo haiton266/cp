@@ -45,6 +45,13 @@
     "string": "cpp",
     "vector": "cpp",
     "cmath": "cpp",
-    "complex": "cpp"
+    "complex": "cpp",
+    "iosfwd": "cpp",
+    "istream": "cpp",
+    "forward_list": "cpp",
+    "list": "cpp",
+    "unordered_map": "cpp",
+    "unordered_set": "cpp",
+    "sstream": "cpp"
   }
 }

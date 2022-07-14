@@ -3,6 +3,8 @@
         "start": "nodemon ct.js"
     },
     "dependencies": {
+        "exceljs": "^4.3.0",
+        "node-fetch": "2.0",
         "nodemon": "^2.0.16"
     }
 }

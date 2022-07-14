@@ -27,6 +27,14 @@
         </div>
     </div>
 </body>
-<script type="module" src="ct.js"></script>
+<script>
+    fetch('https://codeforces.com/api/user.info?handles=ht266;Fefer_Ivan;CTarget')
+        .then(response => response.json())
+        .then(data => data.result)
+        .then(function(dt) {
+            for (var i = 0; i < dt.length; i++)
+                console.log(dt[i].rating)
+        });
+</script>
 
 </html>

@@ -1,2 +1,2 @@
-
-	freopen("output.out", "w", stdout);
+din);
+	freopen("output.out", "w", s
